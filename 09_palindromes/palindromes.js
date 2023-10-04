@@ -16,8 +16,15 @@ console.log(palindromesOriginal("racecar"));
 const palindromesOdin = function (input) {
   return input.split("").reverse().join("") === input;
 };
-
 console.log(palindromesOdin("racecar"));
+
+//Davds feedback
+
+const palindromesDavid = function (input) {
+  const reversedInput = input.split("").reverse().join("");
+  return reversedInput === input;
+};
+console.log(palindromesDavid("racecar"));
 
 // Do not edit below this line
 module.exports = palindromes;
