@@ -1,3 +1,4 @@
+let aNumber = aNumber;
 let numberOne = numberOne;
 let numberTwo = numberTwo;
 
@@ -9,15 +10,39 @@ const subtract = function (numberOne, numberTwo) {
   return numberOne - numberTwo;
 };
 
-const sum = function () {};
+// computes the sum of an empty array
+// the input is an array and need to sum its contents be it; empty, 1 number, 2 numbers or any length
+const sum = function (array) {
+  let sumTotal = 0;
+  for (let i = 0; i <= array.length; i++) {
+    sumTotal += i;
+  }
+  return sumTotal;
+};
 
+console.log(sum([1, 2, 3, 4]));
+
+// think about many numbers refactor this to work with many numbers
 const multiply = function (numberOne, numberTwo) {
   return numberOne * numberTwo;
 };
 
-const power = function () {};
+// raises one number to the power of another number
+const power = function (numberOne, numberTwo) {
+  return Math.pow(numberOne, numberTwo);
+};
 
-const factorial = function () {};
+// computes the factorial of a number
+// the factorial of a number is the product of all positive integers less than or equal to that number
+const factorial = function (aNumber) {
+  let answer = 1;
+  for (let i = 1; i <= aNumber; i++) {
+    answer *= i;
+  }
+  return answer;
+};
+
+factorial(3);
 
 // Do not edit below this line
 module.exports = {
